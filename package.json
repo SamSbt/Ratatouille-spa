@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "local-web-server": "^5.3.3",
+    "sass": "^1.77.0"
+  },
+  "name": "ratatouille-spa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "delete_map": "sass custom_bootstrap.scss:index.css --no-source-map --style compressed",
+    "dev": "ws --spa index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamSbt/Ratatouille-spa.git"
+  },
+  "author": "Sam Sbt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamSbt/Ratatouille-spa/issues"
+  },
+  "homepage": "https://github.com/SamSbt/Ratatouille-spa#readme",
+  "description": ""
+}
