@@ -2,38 +2,6 @@ import Component from "../Component.js";
 import FormValidationService from "../../services/FormValidationService.js";
 
 export default class FormContactComponent extends Component {
-  isValid() {
-    let inputName = document.getElementById("inputName").value;
-    let inputEmail = document.getElementById("inputEmail").value;
-    let inputSubject = document.getElementById("inputSubject").value;
-    let textareaContact = document.getElementById("textareaContact").value;
-
-    const verifElements = document.querySelectorAll(".verif");
-    verifElements.forEach((element) => {
-      element.innerHTML = ""; // Réinitialiser les messages de vérification
-    });
-
-    if (!FormValidationService.isNotEmpty(inputName)) {
-      document.getElementById("verifName").innerHTML = "Veuillez saisir votre nom.";
-      console.log("verifName");
-    }
-    if (!FormValidationService.isValidEmail(inputEmail)) {
-      document.getElementById("verifEmail").innerHTML = "Veuillez saisir une adresse email valide.";
-      console.log("verifEmail");
-    }
-    if (!FormValidationService.isNotEmpty(inputSubject)) {
-      document.getElementById("verifSubject").innerHTML = "Veuillez saisir un objet.";
-      console.log("verifSubject");
-    }
-    if (!FormValidationService.isNotEmpty(textareaContact)) {
-      document.getElementById("verifTextarea").innerHTML = "Veuillez saisir un message.";
-      console.log("verifTextarea");
-    }
-
-    inputEmail.addEventListener("keydown", () => {
-      isValid();
-    });
-  }
 
   render() {
     return `
