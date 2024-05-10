@@ -12,27 +12,27 @@ export default class FormResaComponent extends Component {
             <h2 class="d-flex justify-content-center mt-2 mb-4">Réservez une table ou un événement dès maintenant</h2>
             <div class="row mb-4 g-4 align-items-center">
                 <div class="col-md-4">
-                  <input type="text" id="inputName" class="form-control" placeholder="Votre Nom">
+                  <input type="text" id="inputName" name="inputName" class="form-control" placeholder="Votre Nom">
                 </div>
                 <div class="col-md-4">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Votre Email">
+                  <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Votre Email">
                 </div>
                 <div class="col-md-4">
-                  <input type="tel" id="inputPhone" class="form-control" placeholder="Votre Téléphone">
+                  <input type="tel" id="inputPhone" name="inputPhone" class="form-control" placeholder="Votre Téléphone">
                 </div>
             </div>
             <div class="row g-4 align-items-center">
                 <div class="col-4">
-                  <input type="date" id="inputDate" class="form-control" placeholder="Date">
+                  <input type="date" id="inputDate" name="inputDate" class="form-control" placeholder="Date">
                 </div>
                 <div class="col-4">
-                  <input type="time" id="inputHeure" class="form-control" placeholder="Heure">
+                  <input type="time" id="inputHeure" name="inputHeure" class="form-control" placeholder="Heure">
                 </div>
                 <div class="col-4">
-                  <input type="number" id="inputEvent" class="form-control" placeholder="Nombre de personnes" min="1">
+                  <input type="number" id="inputEvent" name="inputEvent" class="form-control" placeholder="Nombre de personnes" min="1" min="100">
                 </div>
                 <div>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre Message..." rows="5"></textarea>
+                  <textarea class="form-control" id="textareaResa" placeholder="Votre Message..." rows="5" name="textareaResa"></textarea>
                 </div>
             </div>
           </form>
