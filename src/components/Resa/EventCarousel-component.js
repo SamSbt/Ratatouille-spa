@@ -19,13 +19,13 @@ export default class EventCarouselComponent extends Component {
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="./src/img/event-birthday.jpg" class="d-block rounded-3 w-100" alt="...">
+                  <img src="./src/img/event-birthday.jpg" class="d-block rounded-3 w-100" alt="Birthday photo" draggable="false">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/event-custom.jpg" class="d-block rounded-3 w-100" alt="...">
+                  <img src="./src/img/event-custom.jpg" class="d-block rounded-3 w-100" alt="Event custom photo" draggable="false">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/event-private.jpg" class="d-block rounded-3 w-100" alt="...">
+                  <img src="./src/img/event-private.jpg" class="d-block rounded-3 w-100" alt="Event private photo" draggable="false">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

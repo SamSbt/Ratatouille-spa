@@ -8,25 +8,25 @@ export default class BackgroundCarousel extends Component {
         <div id="carouselExampleSlidesOnly" class="carousel slide position-fixed zn-1">  
           <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="./src/img/slide-1.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 1">
+                  <img src="./src/img/slide-1.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 1" draggable="false">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/slide-2.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 2">
+                  <img src="./src/img/slide-2.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 2" draggable="false">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/slide-3.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 3">
+                  <img src="./src/img/slide-3.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 3" draggable="false">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/slide-4.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 4">
+                  <img src="./src/img/slide-4.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 4" draggable="false">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/slide-5.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 5">
+                  <img src="./src/img/slide-5.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 5" draggable="false">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/slide-6.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 6">
+                  <img src="./src/img/slide-6.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 6" draggable="false">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/slide-7.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 7">
+                  <img src="./src/img/slide-7.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 7" draggable="false">
                 </div>
 
 
