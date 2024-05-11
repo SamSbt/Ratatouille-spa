@@ -13,20 +13,20 @@ export default class FormContactComponent extends Component {
             
             <div class="row align-items-center">
               <div class="col-6">
-                <input type="text" id="inputName" name="inputName" class="form-control" placeholder="Votre Nom">
+                <input type="text" id="inputName" name="inputName" class="form-control" placeholder="Votre Nom" required>
                 <p id="verifName" class="verif"></p>
               </div>
               
 
               <div class="col-6">
-                <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Votre Email">
+                <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Votre Email" required>
                 <p id="verifEmail" class="verif"></p>
               </div>
               
 
               <div class="row subject mt-4 mb-3">
                 <div class="col">
-                  <input type="text" id="inputSubject" name="inputSubject" class="form-control" placeholder="Objet de votre message">
+                  <input type="text" id="inputSubject" name="inputSubject" class="form-control" placeholder="Objet de votre message" required>
                   <p id="verifSubject" class="verif"></p>
                 </div>
                 
