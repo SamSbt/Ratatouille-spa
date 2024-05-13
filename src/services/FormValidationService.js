@@ -4,7 +4,7 @@ class FormValidationService {
   }
 
   static isValidEmail(inputEmail) {
-    // Utilise une expression régulière pour valider l'email
+    // expression régulière pour valider l'email
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inputEmail);
   }
 

@@ -29,8 +29,6 @@ export default class BackgroundCarousel extends Component {
                   <img src="./src/img/slide-7.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 7" draggable="false">
                 </div>
 
-
-
           </div>
               <button class="carousel-control-prev d-flex justify-content-start ms-3" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
