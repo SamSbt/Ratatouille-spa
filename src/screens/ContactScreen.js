@@ -13,17 +13,19 @@ export default class ContactScreen extends MainScreen {
   }
 
   connectedCallback() {
-    const preloader = document.querySelector('#preloader');
-    window.addEventListener('load', function () {
-      this.preloader.classList.add('fade-out-animation');
-    });
+    const preloader = document.querySelector("#preloader");
+    
+    setTimeout(() => {
+      preloader.style.opacity = "0";
+      preloader.style.visibility = "hidden";
+    }, 500);
   }
 
   render() {
     return `
     <style>@import "./src/screens/styles/ContactStyle.css"</style>
-      <div id="preloader d-flex justify-content-center align-items-center position-fixed top-50 start-50 w-100 h-100">  
-        <div class="spinner-border text-light" role="status">
+      <div id="preloader">  
+        <div class="spinner-border text-dark" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
       </div>
@@ -31,6 +33,7 @@ export default class ContactScreen extends MainScreen {
       <div>${this.props.contactCardComponent.render()}</div>
       <div>${this.props.mapComponent.render()}</div>
       <div><formcontact-component /></div>
+      
     `;
   }
 }
