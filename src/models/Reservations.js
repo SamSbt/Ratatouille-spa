@@ -1,23 +1,36 @@
+import IdGenerator from "./IdGenerator.js";
+
 export default class Reservation {
-  id;
-  name;
-  email;
-  phone;
-  date;
-  heure;
-  nbPersonne;
+  #id;
+  resaName;
+  resaEmail;
+  resaPhone;
+  resaDateTime;
+  resaNbPersonne;
   resaMessage;
 
   constructor(props) {
-    this.id = 0;
-    this.name = props.name;
-    this.email = props.email;
-    this.phone = props.phone;
-    this.date = props.date;
-    this.heure = props.heure;
-    this.nbPersonne = props.event;
+    this.#id = IdGenerator.generateId();
+    this.resaName = props.resaName;
+    this.resaEmail = props.resaEmail;
+    this.resaPhone = props.resaPhone;
+    this.resaDateTime = props.resaDateTime;
+    this.resaNbPersonne = props.resaNbPersonne;
     this.resaMessage = props.resaMessage;
+  }
+
+  getId() {
+    return this.#id;
+  }
+
+  toJSON() {
+    return {
+      id: this.#id,
+      contactName: this.contactName,
+      contactEmail: this.contactEmail,
+      contactSubject: this.contactSubject,
+      contactMessage: this.contactMessage,
+    };
   }
 }
 
-// à refaire par rapport form résa !!

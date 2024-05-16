@@ -244,6 +244,6 @@ button.carousel-control-next {
   font-weight: 500;
   color: #231111 !important;
   font-size: 0.875rem;
-  height: 10px;
+  /* height: 10px; */
   margin-left: 10px;
 }
